@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/20 10:00:23 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 17:31:33 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/12 22:39:41 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,14 +14,9 @@
 
 DIR = src/
 
-ifdef WITH_BONUS
-	NAME = libasm_bonus.a
-else
-	NAME = libasm.a
-endif
+NAME = libasm.a
 
-LIBRARIES = libasm_bonus.a \
-			libasm.a
+LIBRARIES = libasm.a
 
 HEADDIR = includes/
 
