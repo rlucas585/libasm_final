@@ -6,7 +6,7 @@
 /*   By: rlucas <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/03/12 16:56:33 by rlucas        #+#    #+#                 */
-/*   Updated: 2020/03/12 17:04:01 by rlucas        ########   odam.nl         */
+/*   Updated: 2020/03/13 14:46:14 by rlucas        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,15 @@ int				strcmp_tests(void)
 			NORMAL);
 	if (one_strcmp_test("", "hello"))
 		return (1);
+	if (one_strcmp_test("", ""))
+		return (1);
+	if (one_strcmp_test("hello", ""))
+		return (1);
 	if (one_strcmp_test("afhakjgklajgklsj", "afhakjgklajgklsj"))
 		return (1);
 	if (one_strcmp_test("Test", "Rest"))
+		return (1);
+	if (one_strcmp_test("Rest", "Test"))
 		return (1);
 	if (one_strcmp_test("Best", "Rest"))
 		return (1);

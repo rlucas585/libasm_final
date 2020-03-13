@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/24 11:20:21 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 12:42:27 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:34:50 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,9 @@
 
 _ft_strdup:	push		rbp
 			mov			rbp, rsp
-
+			
+			sub			rsp, 8
+			push		r12
 			mov			r12, rdi	; Copy original pointer to a non-volatile
 									; register.
 
@@ -35,6 +37,7 @@ _ft_strdup:	push		rbp
 			call		_ft_strcpy	; rax = ft_strcpy(rdi, rsi)
 
 exit:
+			pop			r12
 			mov			rsp, rbp
 			pop			rbp
 			ret

@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/28 11:07:49 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 12:28:13 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:45:20 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ loop:
 				mov			rdi, [r12]		; rdi = current->data
 				mov			rsi, [r13]		; rsi = next->data
 				call		CMPFUNC			; rax = cmp(rdi, rsi)
-				cmp			eax, 0			; if 'rax', does not work correctly
+				cmp			eax, 0			; cmp() is an 'int' type function
 				jle			next_elem
 											
 				inc			r15				; r15++

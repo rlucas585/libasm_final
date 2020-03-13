@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/24 11:56:14 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 11:21:36 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:50:01 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,6 @@
 
 				global		_ft_atoi_base
 				extern		_ft_strlen
-				extern		_ft_atoi
 				extern		_ft_strchr
 
 				section		.data
@@ -47,12 +46,7 @@ _ft_atoi_base:	push		rbp
 				test		rax, rax
 				jz			err
 
-				mov			rdi, BASE	; rdi = 'base'
-				call		_ft_strlen
-				test		rax, rax
-				jz			err
-
-		; Both strings checked to see if empty
+		; STR checked to see if empty. BASE will be checked later.
 
 check_base_sign:
 				mov			rdi, BASE	; 'rdi' = base
@@ -90,7 +84,7 @@ check_no_dup:
 atoi_begin:
 				cmp			r12, 1		; Check that base is over 1
 				jle			err
-				mov			rdi, [rsp]	; 'rdi' = str
+				mov			rdi, STR	; 'rdi' = str
 				mov			rax, 0
 				xor			r14, r14	; Set r14 to 0.
 

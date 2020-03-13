@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/20 10:00:23 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/13 12:56:36 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:46:49 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ ifdef WITH_BONUS
 	ASM += $(BONUS)
 endif
 
-SRC = $(TESTDIR)nocrit_main.c \
+SRC = $(TESTDIR)main.c \
 	  $(TESTDIR)write_tests.c \
 	  $(TESTDIR)read_tests.c \
 	  $(TESTDIR)strlen_tests.c \
