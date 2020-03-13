@@ -6,7 +6,7 @@
 /*   By: rlucas <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/02/28 19:02:53 by rlucas        #+#    #+#                 */
-/*   Updated: 2020/03/05 23:57:56 by rlucas        ########   odam.nl         */
+/*   Updated: 2020/03/13 12:53:37 by rlucas        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,4 +122,5 @@ void	write_test(const char *str)
 	cr_expect_file_contents_eq(file, expected);
 	fclose(file);
 	fclose(expected);
+	remove("tests/texts/output.txt");
 }

@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/20 10:00:23 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 22:39:41 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 12:56:36 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -133,6 +133,7 @@ $(ASMOBJ): $(ASM)
 
 clean:
 	@rm -f $(ALLOBJ)
+	@rm -rf $(ODIR)
 
 fclean: clean
 	@rm -f $(TESTEXEC)
