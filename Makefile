@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/20 10:00:23 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/13 14:46:49 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:59:25 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -107,9 +107,11 @@ ifdef CRIT
 	@gcc $(FLAGS) -I$(HEADDIR) -o $(TESTEXEC) $(OBJ) -L. \
 		-l$(subst .a,,$(subst lib,,$(NAME))) \
 		-lcriterion
+	@./$(TESTEXEC)
 else
 	@gcc $(FLAGS) -I$(HEADDIR) -o $(TESTEXEC) $(OBJ) -L. \
 		-l$(subst .a,,$(subst lib,,$(NAME)))
+	@./$(TESTEXEC)
 endif
 
 #--------------------------Compile test executable (criterion)------------------

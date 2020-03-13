@@ -6,7 +6,7 @@
 #    By: rlucas <marvin@codam.nl>                     +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/02/28 12:57:18 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 12:18:50 by rlucas        ########   odam.nl          #
+#    Updated: 2020/03/13 14:58:51 by rlucas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,7 +67,7 @@ test_data:
 				mov			rdi, [r13]		; rdi = current->data
 				mov			rsi, DATAREF	; rsi = *data_ref
 				call		CMPFUNC
-				test		rax, rax
+				test		eax, eax
 				jz			link_prev
 				jmp			next_elem
 
@@ -84,7 +84,7 @@ new_head:
 next_elem:
 				mov			rcx, r13
 				mov			r13, r14
-				test		rax, rax
+				test		eax, eax
 				jnz			set_new_prev
 
 free_prev:
