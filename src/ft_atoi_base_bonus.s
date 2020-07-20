@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         ::::::::             #
-#    ft_atoi_base.s                                     :+:    :+:             #
-#                                                      +:+                     #
-#    By: rlucas <marvin@codam.nl>                     +#+                      #
-#                                                    +#+                       #
-#    Created: 2020/02/24 11:56:14 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/13 14:50:01 by rlucas        ########   odam.nl          #
-#                                                                              #
-# **************************************************************************** #
-
 ; Assembly ft_atoi_base
 
 ; ft_atoi_base prototype: int	ft_atoi_base(char *str, char *base);

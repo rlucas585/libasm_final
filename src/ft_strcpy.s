@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         ::::::::             #
-#    ft_strcpy.s                                        :+:    :+:             #
-#                                                      +:+                     #
-#    By: rlucas <marvin@codam.nl>                     +#+                      #
-#                                                    +#+                       #
-#    Created: 2020/02/20 17:05:34 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 12:36:03 by rlucas        ########   odam.nl          #
-#                                                                              #
-# **************************************************************************** #
-
 ; Assembly language ft_strcpy, with annotated comments
 
 ; ft_strcpy prototype: char	*ft_strcpy(char *dst, const char *src);

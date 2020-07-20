@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         ::::::::             #
-#    ft_list_push_front_bonus.s                         :+:    :+:             #
-#                                                      +:+                     #
-#    By: rlucas <marvin@codam.nl>                     +#+                      #
-#                                                    +#+                       #
-#    Created: 2020/02/26 15:59:17 by rlucas        #+#    #+#                  #
-#    Updated: 2020/03/12 11:37:07 by rlucas        ########   odam.nl          #
-#                                                                              #
-# **************************************************************************** #
-
 ; Assembly language ft_list_push_front
 
 ; ft_list_push_front prototype:
